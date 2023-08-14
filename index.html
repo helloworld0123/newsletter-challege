@@ -1,52 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=PT+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      h5 {
+        color: #242742;
+      }
+    </style>
+  </head>
+  <body class="flex justify-center lg:items-center h-full lg:h-screen">
+    <div
+      class="flex flex-col flex-col-reverse justify-end lg:flex-row w-[375px] lg:min-w-[900px] bg-white lg:p-5 lg:rounded-[32px]"
+    >
+      <div class="p-8 lg:py-16 flex flex-col gap-6">
+        <h1 class="text-[46px] lg:text-[54px] font-bold">Stay updated!</h1>
 
-  <!-- Sign-up form start -->
+        <div>
+          Join 60,000+ product managers receiving monthly updates on:
 
-  Stay updated!
+          <ul class="flex flex-col py-6 gap-4">
+            <li class="flex flex-row gap-4 items-start lg:items-center">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="List"
+                class="w-[21px] pt-[2px] lg:pt-0"
+              />Product discovery and building what matters
+            </li>
+            <li class="flex flex-row gap-4 items-start lg:items-center">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="List"
+                class="w-[21px] pt-[2px] lg:pt-0"
+              />Measuring to ensure updates are a success
+            </li>
+            <li class="flex flex-row gap-4 items-start lg:items-center">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="List"
+                class="w-[21px] pt-[2px] lg:pt-0"
+              />And much more!
+            </li>
+          </ul>
+          <div class="flex flex-col gap-2">
+            <label for="email-address" class="font-semibold text-sm"
+              >Email address</label
+            >
+            <input
+              type="text"
+              id="email-address"
+              placeholder="email@company.com"
+              class="border border-[#9294a0] py-4 px-6 rounded-[8px]"
+            />
+          </div>
+        </div>
+        <button
+          class="bg-[#242742] text-white py-4 px-6 rounded-lg font-semibold active:bg-gradient-to-r active:from-[#ff5177] active:to-[#ff944b]"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div>
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="Desktop Image"
+          class="hidden lg:block min-w-[400px]"
+        />
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt="Desktop Image"
+          class="block lg:hidden min-w-[375px]"
+        />
+      </div>
+    </div>
+    <!-- Sign-up form start -->
 
-  Join 60,000+ product managers receiving monthly updates on:
+    <!-- Sign-up form end -->
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+    <!-- Success message start -->
 
-  Email address
-  email@company.com
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
 
-  Subscribe to monthly newsletter
+    <!-- Success message end -->
 
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!--div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">helloworld0123</a>.
+    </div-->
+  </body>
 </html>
